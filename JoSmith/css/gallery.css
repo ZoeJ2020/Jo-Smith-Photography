@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+
+    text-decoration: none;
+
+    /* border-box ensures padding stays inside content without stretching */
+    box-sizing: border-box;
+}
+
+/* IMPORTANT: variables */
+
+:root{ 
+    /* font families - root creates variables */
+    --primary-font: sans-serif;
+    --secondary-font: serif;
+
+    --header-font: 'Playfair Display', serif;
+    --primary-color: #FFFFFF;
+    --second-color: #DEAC95;
+    --accent-color: #5B4F47;
+}
+
+body{
+    /* background colour is colour addressed in root: */
+    background-color: var(--background-color);
+    background-image: url(/JoSmith/images/textures/billie-holiday.png);
+    /* created with transparenttextures.com */
+}
+
+.gallery__header{
+    display: flex;
+
+    max-width: 71em;
+    margin: auto;
+
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: var(--header-font);
+    color: var(--accent-color);
+}
+
+.gallery__header__left{
+  display: flex;
+}
+
+.gallery__header__left > a{
+  font-size: 58px;
+  margin-right: 37px;
+  text-decoration: none;
+  columns: var(--accent-color);
+}
+
+.gallery__header__left > h1{
+  font-size: 34px;
+  font-weight: 100;
+  font-family: var(--header-font);
+}
+
+.gallery__socials{
+  font-size: 52px;
+}
+
+
+.button{
+    background-color: transparent;
+    border: 3px solid rgb(222, 172, 149);
+    padding: 15px 42px;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(219, 193, 181);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+
+}
+
+.button:active{
+    box-shadow: none;
+
+    transition: 0.1s;
+}
+
+/* .gallery__frame__menu{
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+} */
+
+#gallery__frames{
+    display: none;
+}
+
+.active{
+    display: block !important;
+}
+
+.active-btn{
+    background-color: rgb(219, 193, 181);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+/* gallery carousel CSS */
+
+/* .gallery__carousel {
+
+  /*  */
+  .slide {
+    width: 40%;
+    margin: auto;
+  }
+
+  .slide_couple_text span{
+    font-family: var(--header-font);
+    font-size: 66px;
+  }
+
+  .slide_couple_text{
+    font-family: var(--header-font);
+    font-size: 66px;
+  }
+
+  .slide_date_text{
+    font-family: var(--secondary-font);
+  }
+
+  .slide_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+
+  .slide_img img{
+    width: 100%;
+  }
+  
+  .btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+  }
+  
+  .btn:active {
+    transform: scale(1.1);
+  }
+  
+  .slide_btn_prev {
+    top: 45%;
+    left: 2%;
+  }
+  
+  .slide_btn_next {
+    top: 45%;
+    right: 2%;
+  }

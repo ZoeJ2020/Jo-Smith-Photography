@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+    /* border-box ensures padding stays inside content without stretching */
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: spanText;
+    src: url(/JoSmith/css/fonts/BDMegalonaDEMOPersonalUseOnly-RegularItalic.otf);
+}
+
+img{
+    /* change parent container for width change, if flex items do not have parent element then they stretch */
+    width: 100%;
+}
+
+ul, li{
+    /* remove bullet points from unordered lists and list items */
+    list-style-type: none;
+}
+
+a{
+    /* remove decoration from anchor tags */
+    text-decoration: none;
+}
+
+
+
+/* IMPORTANT: variables */
+
+:root{ 
+    /* font families - root creates variables */
+    --primary-font: sans-serif;
+    --secondary-font: serif;
+
+    --header-font: 'Playfair Display', serif;
+
+    --background-color: rgb(255, 255, 255);
+}
+
+body{
+    /* background colour is colour addressed in root: */
+    background-color: var(--background-color);
+    background-image: url(/JoSmith/images/textures/billie-holiday.png);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+/* intro__container animations */
+@keyframes intro__overlayLogoFadeIn {
+    0%{ 
+        opacity: 0; 
+        transform: translateY(20%); 
+    }
+    
+    100%{ 
+        opacity: 1; 
+        transform: translateY(0%);
+    }
+}
+
+@keyframes intro__overlayImageFadeInL {
+    0%{ 
+        opacity: 0;
+        transform: translateY(5%); 
+        transform: rotate(0deg);
+    }
+    100%{ 
+        opacity: 1; 
+        top: 10%;
+        left: -25%;
+        transform: rotate(-3deg);
+
+    }
+}
+
+@keyframes intro__overlayImageFadeInR {
+    0%{ 
+        opacity: 0; 
+        transform: translateY(5%); 
+        transform: rotate(0deg);
+    }
+    100%{ 
+        opacity: 1; 
+        bottom: 15%;
+        right: -25%;
+        transform: rotate(-3deg);
+
+    }
+}
+
+@keyframes explore__angles__bobbing{
+    0%{
+        transform: translateY(0%);
+    }
+
+    50%{
+        transform: translateY(10%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes explore__section__appear {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/* start of intro__container CSS */
+.intro__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fa-arrow-down{
+    color: rgb(158, 158, 158);
+    display: flex;
+    margin: auto;
+
+}
+
+.intro__overlay > .logo-info{
+    opacity: 0;
+    animation: 0.7s intro__overlayLogoFadeIn 0.3s ease-in-out forwards;
+}
+
+.intro__overlay > .logo-info > img{
+    width: 80%;
+}
+
+.intro__image{
+    opacity: 0;
+    width: 55%;
+    position: absolute;
+
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+    border: 10px solid #fff;
+}
+
+.intro__image.left {
+    top: 17%;
+    left: -30%;
+
+    animation: 0.7s intro__overlayImageFadeInL 0.9s ease-in-out forwards;
+}
+
+.intro__image.right {
+    bottom: 20%;
+    right: -30%;
+
+    animation: 0.7s intro__overlayImageFadeInR 1.2s ease-in-out forwards;
+}
+
+/* intro container buttons */
+
+.logo-info__buttons > .button{
+    background-color: transparent;
+    border: 3px solid rgb(222, 172, 149);
+    padding: 15px 42px;
+    margin: 2% 4%;
+
+    font-family: var(--header-font);
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.logo-info__buttons > .button:hover{
+    cursor: pointer;
+    background-color: rgb(219, 193, 181);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+
+}
+
+.logo-info__buttons > .button:active{
+    box-shadow: none;
+
+    transition: 0.1s;
+}
+
+.explore__section{
+    opacity: 0;
+    font-family: spanText;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    position: absolute;
+    font-size: 34px;
+
+    color: rgba(122, 65, 32, 0.678);
+    animation: 0.5s explore__section__appear 1.2s ease-in-out forwards;
+}
+
+.explore__section > .fa-angles-down{
+    color: rgb(151 148 143 / 53%);
+    margin-top: 9%;
+    
+    animation: 1.3s explore__angles__bobbing 1.2s ease-in-out infinite forwards;
+}
+
+/* intro container END */
+
+/* Contact Page CSS */
+h2{
+    font-family: spanText;
+    font-size: 34px;
+    color: rgba(122, 65, 32, 0.678);
+    font-weight: 500;
+}
+
+#contact__section{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+#contact__section > h2{
+    text-align: center;
+}
+
+.services__section{
+    height: 100vh;
+}
+
+.gallery__section{
+    height: 100vh;
+    background-color: rgb(235, 224, 211);
+}
+
+.gallery__section > h2{
+    padding: 4%;
+    text-align: center;
+
+    font-size: 40px;
+}
+
+/* 
+    MEDIA QUERIES
+*/
+
+/* TABLET */
+@media screen and (min-width: 767px){
+    body{
+        background-color: var(--background-color);
+    }
+}
+
+/* LAPTOP */
+
+/* MOBILE PHONE */
