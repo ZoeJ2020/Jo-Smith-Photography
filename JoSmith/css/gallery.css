@@ -27,6 +27,19 @@ body{
     /* created with transparenttextures.com */
 }
 
+@keyframes gallery__exitAnim
+{
+  0%{ 
+    opacity: 0; 
+    transform: translateY(20%); 
+  }
+
+  100%{ 
+      opacity: 1; 
+      transform: translateY(0%);
+  }
+}
+
 .gallery__header{
     display: flex;
 
@@ -106,23 +119,23 @@ body{
 /* .gallery__carousel {
 
   /*  */
-  .slide {
-    width: 40%;
+  .slides {
+    width: 46%;
     margin: auto;
-  }
-
-  .slide_couple_text span{
-    font-family: var(--header-font);
-    font-size: 66px;
   }
 
   .slide_couple_text{
     font-family: var(--header-font);
-    font-size: 66px;
+    font-size: 55px;
+
+    margin: 3px;
+    color: #5b4f47;
   }
 
   .slide_date_text{
     font-family: var(--secondary-font);
+    color: #967e72;
+    font-size: 18px;
   }
 
   .slide_img{

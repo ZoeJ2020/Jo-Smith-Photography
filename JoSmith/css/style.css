@@ -27,7 +27,10 @@ a{
     text-decoration: none;
 }
 
-
+p{
+    color: #5b4f47;
+    font-family: 'Open Sans', sans-serif;
+}
 
 /* IMPORTANT: variables */
 
@@ -45,7 +48,7 @@ body{
     /* background colour is colour addressed in root: */
     background-color: var(--background-color);
     background-image: url(/JoSmith/images/textures/billie-holiday.png);
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        /* created with transparenttextures.com */
 }
 
 /* intro__container animations */
@@ -226,6 +229,16 @@ h2{
     font-weight: 500;
 }
 
+h3{
+    font-family: spanText;
+    font-size: 35px;
+    color: rgba(122, 65, 32, 0.678);
+}
+
+h4{
+    font-family: spanText;
+}
+
 #contact__section{
     background-color: rgb(255, 255, 255);
     height: 100vh;
@@ -235,9 +248,119 @@ h2{
     text-align: center;
 }
 
-.services__section{
-    height: 100vh;
+.about__section{
+    width: 100%;
+    display: block;
 }
+
+.about__div{
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.about__text{
+    width: 25%;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.about__text > p{
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.fa-square-twitter{
+    font-size: 40px;
+    color: #5b4f47;
+}
+
+.fa-square-instagram{
+    font-size: 40px;
+    color: #5b4f47;
+}
+
+.info__images{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.info__images > .img-1{
+    width: 70%;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.2);
+    border: 7px solid #fff;
+    transform: rotate(-3deg);
+}
+
+.info__images > .img-2{
+    width: 100%;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+    border: 6px solid #fff;
+}
+
+.info__images > .img-3{
+    width: 110%;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+    border: 5px solid #fff;
+}
+
+/* SERVICES SECTION */
+
+/* .services__section{
+    display: flex;
+    justify-content: center;
+} */
+
+.services__div{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 4%;
+}
+
+.service_card{
+    background-color: #fff;
+    padding: 1.2%;
+}
+
+.service_card_txt{
+    border: 4px solid rgb(222, 172, 149);
+    height: 300px;
+    width: 300px;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.service_card_txt > p > span{
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.service_card_contract{
+    margin: 23px 0;
+}
+
+.service_card_contract > p > span{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.service_card_contract > .p__contract{
+    font-size: 25px;
+    color: #9e765b;
+}
+
+.framed_card > p{
+    margin-top: 8%;
+}
+
+.framed_card > p > span{
+    font-size: 26px;
+}
+
+/* SERVICES SECTION END */
 
 .gallery__section{
     height: 100vh;

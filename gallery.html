@@ -30,7 +30,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 
     <!-- js -->
-    <script src="/scripts.js"></script>
+    <script src="/gallery.js"></script>
 
     <!-- css -->
     <link rel="stylesheet" href="JoSmith/css/gallery.css">    
@@ -43,7 +43,7 @@
 
     <!-- Create list of stock image acknowledgements and font acknowledgements as you go -->
 </head>
-<body>
+<body onload="runLoad()">
     <div class="gallery__header">
         <!-- back to main site button -->
         <div class="gallery__header__left">
@@ -66,41 +66,7 @@
     <!-- image carousel section -->
     <div class="gallery__carousel">
 
-        <!-- RESEARCH CAROUSEL CODE FROM KAREN AND CODEPEN FOR HELP -->
-
-        <!-- slide 1 -->
-    
-        <!-- <div class="slide">
-            <img src="testimg.jpg" alt="">
-        </div>
-        <div class="slide_text">
-            Husband & Wife
-        </div> -->
-        <!-- slide 2 -->
-
-        <!-- <div class="slide">
-            <img src="testimg.jpg" alt="">
-        </div>
-        <div class="slide_text">
-            Husband & Wife2
-        </div> -->
-        <!-- slide 3 -->
-
-        <!-- <div class="slide">
-            <div class="slide_img">
-                <img src="testimg.jpg" alt="">
-            </div> -->
-            <!-- <div class="slide_text"> 
-                <p class="slide_couple_text">
-                    Husband & Wife3
-                </p>
-                <p class="slide_date_text">
-                    Date 3
-                </p> -->
-            <!-- </div>
-        </div> -->
-   
-        <div class="slide">
+        <div class="slides">
             <div class="slide_img">
                 <img src="testimg.jpg" alt="">
             </div>
@@ -109,14 +75,42 @@
                     Husband & Wife3
                 </p>
                 <p class="slide_date_text">
-                    Date 3
+                    September 5th, 2020
+                </p>
+            </div>
+        </div>
+
+        <div class="slides">
+            <div class="slide_img">
+                <img src="testimg.jpg" alt="">
+            </div>
+            <div class="slide_text"> 
+                <p class="slide_couple_text">
+                    Husband & Wife2
+                </p>
+                <p class="slide_date_text">
+                    April 25th, 2018
+                </p>
+            </div>
+        </div>
+
+        <div class="slides">
+            <div class="slide_img">
+                <img src="testimg.jpg" alt="">
+            </div>
+            <div class="slide_text"> 
+                <p class="slide_couple_text">
+                    Paula & Adrian Schmidt
+                </p>
+                <p class="slide_date_text">
+                    January 20, 2022
                 </p>
             </div>
         </div>
 
         <!-- nav arrows -->
-        <button class="btn slide_btn_prev"><</button>
-        <button class="btn slide_btn_next">></button>
+        <button class="btn slide_btn_prev" onclick="plusSlides(-1)"><</button>
+        <button class="btn slide_btn_next" onclick="plusSlides(1)">></button>
 
 
     </div>
