@@ -174,3 +174,18 @@ body{
     top: 45%;
     right: 2%;
   }
+
+  footer{
+    text-align: center;
+}
+
+footer > img{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+footer > p{
+    color: #676767;
+    margin: 1% 0;
+}
