@@ -40,6 +40,11 @@ body{
   }
 }
 
+a{
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
 .gallery__header{
     display: flex;
 
@@ -72,26 +77,6 @@ body{
 
 .gallery__socials{
   font-size: 52px;
-}
-
-
-.button{
-    background-color: transparent;
-    border: 3px solid rgb(222, 172, 149);
-    padding: 15px 42px;
-}
-
-.button:hover{
-    cursor: pointer;
-    background-color: rgb(219, 193, 181);
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-
-}
-
-.button:active{
-    box-shadow: none;
-
-    transition: 0.1s;
 }
 
 /* .gallery__frame__menu{
@@ -155,14 +140,19 @@ body{
     padding: 10px;
     border: none;
     border-radius: 50%;
-    z-index: 10px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: rgb(219 193 181);
     font-size: 18px;
+
+    transition: 200ms;
   }
   
+  .btn:hover {
+    transform: scale(1.5);
+  }
+
   .btn:active {
-    transform: scale(1.1);
+    transform: scale(1.3);
   }
   
   .slide_btn_prev {

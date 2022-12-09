@@ -7,9 +7,10 @@
     box-sizing: border-box;
 }
 
+/* fonts */
 @font-face {
     font-family: spanText;
-    src: url(/JoSmith/css/fonts/BDMegalonaDEMOPersonalUseOnly-RegularItalic.otf);
+    src: url(/styling/fonts/BDMegalonaDEMOPersonalUseOnly-RegularItalic.otf);
 }
 
 img{
@@ -47,11 +48,13 @@ p{
 body{
     /* background colour is colour addressed in root: */
     background-color: var(--background-color);
-    background-image: url(/JoSmith/images/textures/billie-holiday.png);
+    background-image: url(/styling/textures/billie-holiday.png);
         /* created with transparenttextures.com */
 }
 
 /* intro__container animations */
+
+/* animation for logo */
 @keyframes intro__overlayLogoFadeIn {
     0%{ 
         opacity: 0; 
@@ -64,6 +67,7 @@ body{
     }
 }
 
+/* animation for left image */
 @keyframes intro__overlayImageFadeInL {
     0%{ 
         opacity: 0;
@@ -79,6 +83,7 @@ body{
     }
 }
 
+/* animation for right image */
 @keyframes intro__overlayImageFadeInR {
     0%{ 
         opacity: 0; 
@@ -94,6 +99,7 @@ body{
     }
 }
 
+/* animation for bobbing explore arrow */
 @keyframes explore__angles__bobbing{
     0%{
         transform: translateY(0%);
@@ -108,6 +114,7 @@ body{
     }
 }
 
+/* animation for explore div to appear */
 @keyframes explore__section__appear {
     0%{
         opacity: 0;
@@ -174,6 +181,7 @@ body{
 .logo-info__buttons > .button{
     background-color: transparent;
     border: 3px solid rgb(222, 172, 149);
+    color: black;
     padding: 15px 42px;
     margin: 2% 4%;
 
@@ -280,29 +288,17 @@ h4{
     color: #5b4f47;
 }
 
-.info__images{
+.profile__image{
     width: 28%;
     display: flex;
     justify-content: center;
 }
 
-.info__images > .img-1{
+.profile__image > .profile{
     width: 70%;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.2);
     border: 7px solid #fff;
     transform: rotate(-3deg);
-}
-
-.info__images > .img-2{
-    width: 100%;
-    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
-    border: 6px solid #fff;
-}
-
-.info__images > .img-3{
-    width: 110%;
-    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
-    border: 5px solid #fff;
 }
 
 /* SERVICES SECTION */
@@ -468,7 +464,6 @@ footer > p{
 
 /* TABLET */
 @media screen and (max-width: 977px){
-    /* change services to one per line, same with social media and contact page */
 
     .about__div{
         display: block;
@@ -489,6 +484,16 @@ footer > p{
 
     .about__text > h2{
         text-align: center;
+    }
+
+    .profile__image{
+        width: auto;
+    }
+
+    /* profile section */
+    .profile__image > .profile{
+        width: 60%;
+        margin-bottom: 35px;
     }
 
     /* services section */

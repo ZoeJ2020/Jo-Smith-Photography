@@ -18,10 +18,11 @@
     <meta name="author" content="Jo Smith">
 
     <!-- favicon information -->
-    <link rel="apple-touch-icon" sizes="180x180" href="JoSmith/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="JoSmith/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="JoSmith/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="JoSmith/images/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="styling/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="styling/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="styling/favicon//favicon-16x16.png">
+    <link rel="manifest" href="styling/favicon/site.webmanifest">
+
 
     <script src="https://kit.fontawesome.com/bcbcfe0164.js" crossorigin="anonymous"></script>
 
@@ -30,20 +31,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 
     <!-- js -->
-    <script src="/gallery.js"></script>
+    <script src="/js/gallery.js"></script>
 
     <!-- css -->
-    <link rel="stylesheet" href="JoSmith/css/gallery.css">    
+    <link rel="stylesheet" href="/styling/css/gallery.css">    
     <title>Jo Smith Photography</title>
 
-    <!-- metatags for descriptive keywords 
-    
-    https://www.seoptimer.com/meta-tag-generator
-    -->
-
-    <!-- Create list of stock image acknowledgements and font acknowledgements as you go -->
 </head>
 <body onload="runLoad()">
+    <!-- Gallery Header -->
     <div class="gallery__header">
         <!-- back to main site button -->
         <div class="gallery__header__left">
@@ -57,18 +53,24 @@
                     <!-- social media icons -->
             <div class="gallery__socials">
             <!-- font awesome links here -->
-            <i class="fa-brands fa-square-twitter"></i>
-            <i class="fa-brands fa-square-instagram"></i>
+            <a href="https://twitter.com/josmithphoto">
+                <i class="fa-brands fa-square-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/josmithphotography123/?hl=en">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
             </div>
         </div>
     </div>
+    <!-- Gallery Header END-->
 
-    <!-- image carousel section -->
+    <!-- Image Carousel -->
     <div class="gallery__carousel">
 
+        <!-- Individual image slides -->
         <div class="slides">
             <div class="slide_img">
-                <img src="gallery-img-1.jpg" alt="">
+                <img src="/styling/images/gallery-img-1.jpg" alt="">
             </div>
             <div class="slide_text"> 
                 <p class="slide_couple_text">
@@ -82,7 +84,7 @@
 
         <div class="slides">
             <div class="slide_img">
-                <img src="gallery-img-2.jpg" alt="">
+                <img src="/styling/images/gallery-img-2.jpg" alt="">
             </div>
             <div class="slide_text"> 
                 <p class="slide_couple_text">
@@ -96,7 +98,7 @@
 
         <div class="slides">
             <div class="slide_img">
-                <img src="gallery-img-3.jpg" alt="">
+                <img src="/styling/images/gallery-img-3.jpg" alt="">
             </div>
             <div class="slide_text"> 
                 <p class="slide_couple_text">
@@ -108,18 +110,21 @@
             </div>
         </div>
 
-        <!-- nav arrows -->
+        <!-- Navigational Arrows -->
         <button class="btn slide_btn_prev" onclick="plusSlides(-1)"><</button>
         <button class="btn slide_btn_next" onclick="plusSlides(1)">></button>
-
+        <!-- Navigational Arrows END -->
 
     </div>
+    <!-- Image Carousel END -->
 
+    <!-- Footer -->
     <footer>
-        <img src="/footer-img.png" alt="">
+        <img src="/styling/images/footer-img.png" alt="">
         <p class="copyright">&#169; Jo Smith Photography</span>
         <p class="copyright">Website by Zoe Johnston</span>
     </footer>
-    </div>
+    <!-- Footer END -->
+
 </body>
 </html>

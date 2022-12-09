@@ -18,10 +18,10 @@
     <meta name="author" content="Jo Smith">
 
     <!-- favicon information -->
-    <link rel="apple-touch-icon" sizes="180x180" href="JoSmith/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="JoSmith/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="JoSmith/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="JoSmith/images/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="styling/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="styling/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="styling/favicon//favicon-16x16.png">
+    <link rel="manifest" href="styling/favicon/site.webmanifest">
 
     <script src="https://kit.fontawesome.com/bcbcfe0164.js" crossorigin="anonymous"></script>
 
@@ -31,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
 
     <!-- css -->
-    <link rel="stylesheet" href="JoSmith/css/style.css">    
+    <link rel="stylesheet" href="/styling/css/style.css">    
     <title>Jo Smith Photography</title>
 
     <!-- metatags for descriptive keywords 
@@ -42,51 +42,70 @@
     <!-- Create list of stock image acknowledgements and font acknowledgements as you go -->
 </head>
 <body>
+
+    <!-- Intro Section -->
     <div class="intro__container">
         <div class="intro__overlay">
-            <!-- framed image 1 -->
+
+            <!-- right framed image -->
             <div class="intro__image right">
-                <img src="gallery-img-3.jpg" alt="">
+                <img src="/styling/images/gallery-img-3.jpg" alt="">
             </div>
 
+            <!-- Logo Section -->
             <div class="logo-info">
-                <!-- logo -->
-                <img src="./JoSmith/images/logo/logo.png" alt="">
+                <img src="/styling/logo/logo.png" alt="">
 
+                <!-- logo info buttons (contact + gallery) -->
                 <div class="logo-info__buttons">
                     <a href="#contact__section" class="button">Contact</a>
                     <a href="gallery.html" class="button">Gallery</a>
                 </div>
             </div>
+            <!-- Logo Section END -->
 
+            <!-- bobbing explore button -->
             <div class="explore__section">
                 Explore
                 <i class="fa-solid fa-angles-down"></i>
             </div>
 
-            <!-- framed image 2 -->
+            <!-- left framed image -->
             <div class="intro__image left">
-                <img src="gallery-img-1.jpg" alt="">
+                <img src="/styling/images/gallery-img-1.jpg" alt="">
             </div>
         </div>
     </div>
+    <!-- Intro Section END -->
 
+    <!-- About Section -->
     <div class="about__section">
             <div class="about__div">
-                <div class="info__images">
-                    <img src="/image.jpg" alt="" class="img-1">
+                <!-- Profile picture -->
+                <div class="profile__image">
+                    <img src="/styling/images/profile.jpg" alt="" class="profile">
                 </div>
+
+                <!-- About text -->
                 <div class="about__text">
                     <h2>Hello!</h2>
                     <p>I am Jo Smith, a professional wedding photographer from Dundee.</p>
                     <p>I graduated from Art School.</p>
-                    <i class="fa-brands fa-square-twitter"></i>
-                    <i class="fa-brands fa-square-instagram"></i>
-        
-                </div>    
+                    
+                    <!-- font awesome icons -->
+                    <a href="https://twitter.com/josmithphoto">
+                        <i class="fa-brands fa-square-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/josmithphotography123/?hl=en">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </div>   
+
             </div>
     </div>
-    
+    <!-- About Section END -->
+
+    <!-- Services Section -->
     <div class="services__section">
         <h2>Services</h2>
         <div class="services__div">
@@ -124,7 +143,9 @@
             </div>
         </div>
     </div>
+    <!-- Services Section END -->
 
+    <!-- Social Section -->
     <div class="social__section">
         <h2>Newest Posts</h2>
         <div class="social__section__posts">
@@ -143,10 +164,13 @@
             </div>
         </div>
     </div>
+    <!-- Social Section END -->
 
+    <!-- Contact Section -->
     <div id="contact__section">
         <h2>Contact Me</h2>
 
+        <!-- Contact Form -->
         <div class="contact__section__wrap">
             <div class="contact__section__form">
                 <form action="#submitform">
@@ -208,13 +232,18 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.1444062655037!2d-2.865505468145223!3d56.46527322755666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865e96e548488d%3A0x652981c5a1436741!2s987%20Brook%20St%2C%20Broughty%20Ferry%2C%20Dundee%20DD5%202EA!5e0!3m2!1sen!2suk!4v1669684320317!5m2!1sen!2suk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
+        <!-- Contact Form END -->
 
     </div>
+    <!-- Contact Section END -->
 
+    <!-- Footer Section -->
     <footer>
-        <img src="/footer-img.png" alt="">
+        <img src="/styling/images/footer-img.png" alt="">
         <p class="copyright">&#169; Jo Smith Photography</span>
         <p class="copyright">Website by Zoe Johnston</span>
     </footer>
+    <!-- Footer Section END -->
+
 </body>
 </html>
