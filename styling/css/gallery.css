@@ -45,6 +45,11 @@ a{
   font-weight: bold;
 }
 
+.copyright > a{
+  text-decoration: underline;
+  color: #9e765b;
+}
+
 .gallery__header{
     display: flex;
 
