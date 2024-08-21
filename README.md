@@ -10,7 +10,7 @@ The website was to include a photography gallery, information about Jo Smith and
 
 ## Hosting
 
-You should now be able to access the live app at https://zoej2020.github.io/Josmith-photos/ .
+You should now be able to access the live app at https://zoej2020.github.io/Jo-Smith-Photography/ .
    
 ## Tech Stack Used
 
